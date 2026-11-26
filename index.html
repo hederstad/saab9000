@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Saab 9000 CC JGC242</title>
+  <meta name="description" content="Magnus Hederstads gröna Saab 9000 CC från 1990, med modellens historik, B202I-specifikationer och planerna för bakrutetorkaren.">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f6f3ee;
+      --paper: #fbfaf7;
+      --text: #1c1b18;
+      --muted: #5c5850;
+      --line: #d9d4ca;
+      --accent: #1f4d3a;
+      --accent-soft: #e6efe9;
+      --warn-bg: #f8efe3;
+      --warn-text: #5c3d12;
+      --warn-line: #e4d0ae;
+      --done: #1f4d3a;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #161614;
+        --paper: #1e1d1a;
+        --text: #f3f0ea;
+        --muted: #b4afa5;
+        --line: #3a3832;
+        --accent: #8fbfa6;
+        --accent-soft: #24332c;
+        --warn-bg: #2c2418;
+        --warn-text: #f0d7a8;
+        --warn-line: #5a4a2e;
+        --done: #8fbfa6;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { font-size: 18px; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Times New Roman", serif;
+      line-height: 1.55;
+    }
+    main {
+      max-width: 40rem;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 4rem;
+    }
+    h1 {
+      font-size: 2rem;
+      font-weight: 650;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      margin: 1.25rem 0 0.5rem;
+    }
+    .summary {
+      color: var(--muted);
+      margin: 0 0 1.75rem;
+      font-size: 1.05rem;
+    }
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 650;
+      margin: 2.25rem 0 0.85rem;
+      letter-spacing: -0.01em;
+    }
+    p { margin: 0 0 1rem; }
+    figure { margin: 0 0 1.5rem; }
+    figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      background: var(--paper);
+    }
+    figcaption {
+      margin-top: 0.6rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.45;
+    }
+    a { color: var(--accent); }
+    a:hover { text-decoration-thickness: 2px; }
+    dl {
+      margin: 0;
+      border-top: 1px solid var(--line);
+    }
+    .props div {
+      display: grid;
+      grid-template-columns: 9.5rem 1fr;
+      gap: 0.75rem 1rem;
+      padding: 0.7rem 0;
+      border-bottom: 1px solid var(--line);
+      font-size: 0.95rem;
+    }
+    dt {
+      color: var(--muted);
+      font-weight: 500;
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      font-size: 0.82rem;
+      letter-spacing: 0.01em;
+    }
+    dd { margin: 0; }
+    .caption {
+      color: var(--muted);
+      font-size: 0.88rem;
+      margin: -0.4rem 0 0.9rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0 0 1rem;
+      font-size: 0.95rem;
+    }
+    th, td {
+      text-align: left;
+      padding: 0.55rem 0;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+    }
+    th { color: var(--muted); font-weight: 500; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 0.82rem; }
+    td:last-child, th:last-child { text-align: right; }
+    .callout {
+      background: var(--warn-bg);
+      color: var(--warn-text);
+      border: 1px solid var(--warn-line);
+      border-radius: 12px;
+      padding: 0.95rem 1rem;
+      margin: 0 0 1.1rem;
+    }
+    .callout strong { display: block; margin-bottom: 0.25rem; }
+    .callout p { margin: 0; }
+    .checklist {
+      list-style: none;
+      margin: 0 0 1rem;
+      padding: 0;
+    }
+    .checklist li {
+      display: grid;
+      grid-template-columns: 1.3rem 1fr;
+      gap: 0.6rem;
+      padding: 0.55rem 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .mark {
+      width: 1.15rem;
+      height: 1.15rem;
+      border-radius: 999px;
+      border: 1.5px solid var(--line);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 0.2rem;
+      font-size: 0.7rem;
+    }
+    .checklist li.done .mark {
+      background: var(--done);
+      border-color: var(--done);
+      color: var(--paper);
+    }
+    .meta {
+      display: block;
+      color: var(--muted);
+      font-size: 0.88rem;
+      margin-top: 0.15rem;
+    }
+    .sources {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: var(--paper);
+      overflow: hidden;
+    }
+    .sources li { border-top: 1px solid var(--line); }
+    .sources li:first-child { border-top: 0; }
+    .sources a {
+      display: block;
+      padding: 0.8rem 1rem;
+      text-decoration: none;
+      color: inherit;
+    }
+    .sources a:hover { background: var(--accent-soft); }
+    .sources .site {
+      display: block;
+      color: var(--muted);
+      font-size: 0.82rem;
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      margin-bottom: 0.15rem;
+    }
+    .sources .title { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+    @media (max-width: 560px) {
+      .props div { grid-template-columns: 1fr; gap: 0.15rem; }
+      html { font-size: 17px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <figure>
+      <img
+        src="saab-9000i.jpeg"
+        alt="En vit Saab 9000i med den ursprungliga CC-karossen och raka fronten, parkerad vid en småbåtshamn."
+        width="1772"
+        height="1323">
+      <figcaption>
+        En Saab 9000i med den ursprungliga CC-karossen, inte JGC242.
+        Foto: <a href="https://commons.wikimedia.org/wiki/User:Untitled">Untitled</a>,
+        <a href="https://commons.wikimedia.org/wiki/File:Saab_9000i.jpeg">Wikimedia Commons</a>,
+        <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.
+      </figcaption>
+    </figure>
+
+    <h1>Saab 9000 CC JGC242</h1>
+    <p class="summary">Magnus Hederstads gröna Saab 9000 CC från 1990, med modellens historik, B202I-specifikationer och planerna för bakrutetorkaren.</p>
+
+    <dl class="props">
+      <div><dt>Ägare</dt><dd>Magnus Hederstad</dd></div>
+      <div><dt>Modell</dt><dd>Saab 9000 CC 2.0</dd></div>
+      <div><dt>Årsmodell</dt><dd>1990</dd></div>
+      <div><dt>Reg.nr</dt><dd>JGC242</dd></div>
+      <div><dt>Färg</dt><dd>Grön</dd></div>
+      <div><dt>Motor</dt><dd>B202I, 128 hk</dd></div>
+      <div><dt>Växellåda</dt><dd>Manuell</dd></div>
+      <div><dt>Kaross</dt><dd>Femdörrars combi coupé</dd></div>
+      <div><dt>Bakrutetorkare</dt><dd>Saknas; hålet i rutan är pluggat från fabrik</dd></div>
+    </dl>
+
+    <section>
+      <h2>Historik</h2>
+      <p>Saab 9000 presenterades för pressen i Kolmården den 24 maj 1984 och började säljas som årsmodell 1985. Det var Saabs första stora bil i den övre mellanklassen, utvecklad på Type Four-plattformen tillsammans med Fiat Croma, Lancia Thema och Alfa Romeo 164. Formgivningen kom från Giorgetto Giugiaro och Saabs Björn Envall. Bilarna byggdes i Trollhättan och hos Valmet i Nystad i Finland.</p>
+      <p>Den ursprungliga karossen var en femdörrars halvkombi, senare kallad CC (combi coupé), med en rak och upprätt front. Sedanvarianten CD kom 1988 med sluttande front. Samma front fick CC först som årsmodell 1991, från hösten 1990 i Europa. En typisk årsmodell 1990 har därför fortfarande den ursprungliga raka fronten. CC ersattes av CS från årsmodell 1992.</p>
+      <p>Tillverkningen av 9000 upphörde den 6 maj 1998, då efterträdaren 9-5 redan hade lanserats. Totalt byggdes 503 087 bilar, varav 216 385 var CC (årsmodell 1985–1991).</p>
+    </section>
+
+    <section>
+      <h2>Motorn B202I</h2>
+      <table>
+        <thead>
+          <tr><th>Uppgift</th><th>Värde</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Motorkod</td><td>B202I</td></tr>
+          <tr><td>Typ</td><td>Sugmotor, radfyra, 16 ventiler, DOHC</td></tr>
+          <tr><td>Volym</td><td>1 985 cm³</td></tr>
+          <tr><td>Borrning × slag</td><td>90 × 78 mm</td></tr>
+          <tr><td>Kompression</td><td>10,1:1</td></tr>
+          <tr><td>Effekt</td><td>128 hk DIN (94 kW) vid 5 500 r/min</td></tr>
+          <tr><td>Vridmoment</td><td>173 Nm vid 3 750 r/min</td></tr>
+          <tr><td>Insprutning</td><td>Bosch LH-Jetronic</td></tr>
+          <tr><td>Placering</td><td>Tvärställd, framhjulsdrift</td></tr>
+        </tbody>
+      </table>
+      <p>Siffrorna för effekt och vridmoment gäller den katalysatorförsedda sugmotorn från årsmodell 1989, enligt Wikipedia som stöder sig på Automobil Revue 1990. Tidigare årgångar angavs till 125 hk DIN med katalysator. 128 hk stämmer med uppgiften för JGC242. Borrning, slaglängd och kompression är standardvärden för B202.</p>
+    </section>
+
+    <section>
+      <h2>Projekt och planer</h2>
+      <p class="caption">Status den 26 november 2026.</p>
+      <aside class="callout">
+        <strong>Passformen är inte bekräftad</strong>
+        <p>Torkarmotorn 9083676 (Denso 159100-7122, motsvarar 9086869) är avsedd för 9000 CS 1992–98. Det är inte klarlagt att den passar CC.</p>
+      </aside>
+      <ul class="checklist">
+        <li class="done"><span class="mark" aria-hidden="true">✓</span><span>Fabrikspluggat hål i bakrutan konstaterat</span></li>
+        <li><span class="mark" aria-hidden="true"></span><span>Kontrollera om kablaget redan sitter på plats</span></li>
+        <li><span class="mark" aria-hidden="true"></span><span>Bekräfta att torkarmotor 9083676 passar CC<span class="meta">Avsedd för CS 1992–98</span></span></li>
+        <li><span class="mark" aria-hidden="true"></span><span>Montera torkarmotor och blad</span></li>
+      </ul>
+      <p>En plan som är på gång är att montera bakrutetorkare. Med tur sitter kablaget redan på plats. Magnus följer också Saab 9000 dagligen på Tradera, med tonvikt på hela bilar och ovanliga fynd, och gillar allt som har med Saab och Volvo att göra.</p>
+    </section>
+
+    <section>
+      <h2>Källor</h2>
+      <ul class="sources">
+        <li><a href="https://en.wikipedia.org/wiki/Saab_9000"><span class="site">Wikipedia (en)</span><span class="title">Saab 9000</span></a></li>
+        <li><a href="https://sv.wikipedia.org/wiki/Saab_9000"><span class="site">Wikipedia (sv)</span><span class="title">Saab 9000</span></a></li>
+        <li><a href="https://www.saabmuseum.com/9000/my.html"><span class="site">The Saab Museum</span><span class="title">Saab 9000 model-year changes</span></a></li>
+        <li><a href="https://teknikensvarld.expressen.se/nyheter/bil-och-trafik/historien-om-saab-9000-585777/"><span class="site">Teknikens Värld</span><span class="title">Historien om Saab 9000</span></a></li>
+        <li><a href="https://commons.wikimedia.org/wiki/File:Saab_9000i.jpeg"><span class="site">Wikimedia Commons</span><span class="title">Saab 9000i.jpeg</span></a></li>
+        <li><a href="https://www.tradera.com/search?q=saab%209000"><span class="site">Tradera</span><span class="title">Sökning: Saab 9000</span></a></li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
